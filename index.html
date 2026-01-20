@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HASIL NILAI SISWA</title> <!--judul-->
+</head>
+
+<center>
+<body bgcolor="#c5ccd6">
+
+    <h2><font color="black"> Form Hasil Penilaian</font></h2> <!--judul lebil kecil dari h1-->
+    
+    <!--action= setelah tombol di klik data dikirim ke proses.php-->
+  <form action="proses.php" method="post"> <!--KALAU ADA FORM PAKAI POST, cara kirim data-->
+
+    <table border="1" cellpadding="8" cellspacing="0">
+      <tr bgcolor="#8e9aaf">
+        <th colspan="2">Data Siswa</th>
+    </tr>
+
+    <tr>
+        <td>Nama Siswa</td>
+        <td><input type="text" name="nama" required></td>
+    </tr>
+
+    <tr>
+        <td>NISN</td>
+        <td><input type="text" name="NISN" required maxlength="10"
+    oninput="this.value=this.value.replace(/[^0-9]/g,'')"></td>
+    </tr>
+
+
+<br><br>
+
+    <tr bgcolor="#8e9aaf">
+        <th colspan="2">Nilai Mata Pelajaran</th>
+    </tr>
+     <tr>
+        <td>Matematika</td>
+        <td><input type="number" name="mtkk" required></td>
+    </tr>
+
+    <tr>
+        <td>Bahasa Indonesia</td>
+        <td><input type="number" name="indo" required></td>
+    </tr>
+
+    <tr>
+        <td>IPAS</td>
+        <td><input type="number" name="ipas" required></td>
+    </tr>
+
+    <tr>
+        <td>Bahasa Inggris</td>
+        <td><input type="number" name="inggris" required></td>
+    </tr>
+    <tr>
+        <td>Dasar Komputer</td>
+        <td><input type="number" name="daskom" required></td>
+    </tr>
+
+    <tr bgcolor="#5a6c88">
+        <td colspan="2" align="center">
+            <button type="submit">Proses Nilai</button>
+        </td>
+    </tr>
+    
+</table>
+  </form>
+</center>
+    
+</body>
+</html>
